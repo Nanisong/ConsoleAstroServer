@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ServiceModel;
+//Author: Lan Song ID:30072745 26/9/2023 Murdoch
 namespace ConsoleAstroServer
 {
     [ServiceContract]

@@ -6,28 +6,19 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using AstroMaths;
 using System.Diagnostics;
-
+//Author: Lan Song ID:30072745 26/9/2023 Murdoch
 namespace ConsoleAstroServer
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //For test DLL
-            //ClassAstroMaths math = new ClassAstroMaths();
-            //double a = 500.1;
-            //double b = 500.0;
-            //double re = math.StarVelocity(a, b);
-            //Console.WriteLine(re);
-            //Console.ReadLine();
-
             //6.3 To create the ServiceHost object that will host this interface using the NetNamedPipeBinding
             //This code can be runn a loop, however, the ServiceHost is open and is only closed when the console
             //program is terminated.Ensure you have created a Release build of this code for testing.
 
             try
             {
-
                 using (ServiceHost host = new ServiceHost(typeof(AstroServerImplementation),
                     new Uri[]{
                         new Uri("net.pipe://localhost/SpaceServer1")}))
